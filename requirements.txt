@@ -1,0 +1,13 @@
+# Clip Downloader 2.0 — tested with Python 3.12/3.13
+PySide6==6.11.2
+PySideSix-Frameless-Window==0.8.2   # pulls in pywin32 on Windows
+yt-dlp>=2026.8.19                   # keep this current: pip install -U yt-dlp
+numpy>=1.26
+pillow>=11.0                        # image converter / resizer / compressor
+pillow-heif>=0.18                   # HEIC/HEIF (iPhone photos) open + save
+pymupdf>=1.24                       # PDF compression (AGPL-3.0)
+
+# development / tests only
+pytest>=8
+pytest-qt>=4.4
+pyinstaller>=6.10

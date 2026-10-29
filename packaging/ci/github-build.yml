@@ -1,0 +1,44 @@
+# GitHub Actions workflow: builds the Windows installer and the macOS disk images on GitHub's machines.
+# To use it, copy this file to .github/workflows/build.yml in your repository, push, then run
+# Actions > Build installers (or push a tag like v2.1.0) and download the files from the run's Artifacts.
+name: Build installers
+
+on:
+  workflow_dispatch:
+  push:
+    tags: ["v*"]
+
+jobs:
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build installer
+        shell: pwsh
+        run: |
+          python -m venv .venv
+          ./packaging/windows/make_installer.ps1
+      - uses: actions/upload-artifact@v4
+        with:
+          name: windows-installer
+          path: dist/installer/*.exe
+
+  macos:
+    strategy:
+      matrix:
+        os: [macos-14, macos-13]   # Apple Silicon, Intel
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build app + dmg
+        run: PYTHON=python bash packaging/mac/build_mac.sh
+      - uses: actions/upload-artifact@v4
+        with:
+          name: mac-${{ matrix.os }}
+          path: dist/*.dmg

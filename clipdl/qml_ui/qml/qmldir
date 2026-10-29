@@ -1,0 +1,18 @@
+singleton Theme 1.0 Theme.qml
+singleton Icons 1.0 Icons.qml
+Icon 1.0 Icon.qml
+Card 1.0 Card.qml
+Btn 1.0 Btn.qml
+Seg 1.0 Seg.qml
+AppSwitch 1.0 AppSwitch.qml
+AppSlider 1.0 AppSlider.qml
+FieldBox 1.0 FieldBox.qml
+TrimTrack 1.0 TrimTrack.qml
+PlayerCard 1.0 PlayerCard.qml
+Inspector 1.0 Inspector.qml
+ClipPage 1.0 ClipPage.qml
+ToolPage 1.0 ToolPage.qml
+AppearancePage 1.0 AppearancePage.qml
+Sidebar 1.0 Sidebar.qml
+WindowControls 1.0 WindowControls.qml
+ImageEditor 1.0 ImageEditor.qml

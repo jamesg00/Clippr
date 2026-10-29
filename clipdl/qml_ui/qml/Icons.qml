@@ -1,0 +1,37 @@
+pragma Singleton
+import QtQuick
+
+// 24x24 stroke paths (lucide-style), used by Icon.qml
+QtObject {
+    readonly property string link: "M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"
+    readonly property string scissors: "M9 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM9 18a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM20 4 8.12 15.88M14.47 14.48 20 20M8.12 8.12 12 12"
+    readonly property string play: "M7 4.5v15l12.5-7.5z"
+    readonly property string pause: "M6 5h4v14H6zM14 5h4v14h-4z"
+    readonly property string skipBack: "M6 5v14M18 5 8 12l10 7z"
+    readonly property string skipFwd: "M18 5v14M6 5l10 7-10 7z"
+    readonly property string loop: "M4 12a6 6 0 0 1 6-6h8M15 3l3 3-3 3M20 12a6 6 0 0 1-6 6H6M9 21l-3-3 3-3"
+    readonly property string volume: "M4 9h4l5-4v14l-5-4H4zM16 9a4 4 0 0 1 0 6M19 6a8 8 0 0 1 0 12"
+    readonly property string volumeX: "M4 9h4l5-4v14l-5-4H4zM17 9l5 6M22 9l-5 6"
+    readonly property string expand: "M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"
+    readonly property string collapse: "M9 4v5H4M15 4v5h5M9 20v-5H4M15 20v-5h5"
+    readonly property string download: "M12 3v12M7 10l5 5 5-5M5 21h14"
+    readonly property string folder: "M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+    readonly property string check: "M5 12.5l4.5 4.5L19 7"
+    readonly property string x: "M18 6 6 18M6 6l12 12"
+    readonly property string alert: "M12 8v5M12 16.5v.01M10.3 3.9 2.4 17.5A2 2 0 0 0 4.1 20.5h15.8a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"
+    readonly property string music: "M9 18V5l12-2v13M9 18a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM21 16a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"
+    readonly property string convert: "M4 8h13l-3-3M20 16H7l3 3"
+    readonly property string resize: "M4 14v6h6M20 10V4h-6M4 20 11 13M20 4l-7 7"
+    readonly property string compress: "M4 4l6 6M20 4l-6 6M4 20l6-6M20 20l-6-6M10 10h4v4h-4z"
+    readonly property string palette: "M12 3a9 9 0 1 0 0 18c1.1 0 1.8-.9 1.5-1.9-.3-1 .4-2.1 1.5-2.1H17a4 4 0 0 0 4-4c0-5-4-10-9-10zM7.5 11.5v.01M10 7.5v.01M14.5 7.5v.01"
+    readonly property string upload: "M12 16V4M7 9l5-5 5 5M4 20h16"
+    readonly property string file: "M6 3h8l5 5v13H6z"
+    readonly property string externalLink: "M14 4h6v6M20 4 10 14M18 14v6H4V6h6"
+    readonly property string rotateCcw: "M3 12a9 9 0 1 0 3-6.7L3 8M3 3v5h5"
+    readonly property string rotateCw: "M21 12a9 9 0 1 1-3-6.7L21 8M21 3v5h-5"
+    readonly property string flipH: "M12 3v18M8 7 3 12l5 5V7zM16 7l5 5-5 5V7z"
+    readonly property string flipV: "M3 12h18M7 8l5-5 5 5H7zM7 16l5 5 5-5H7z"
+    readonly property string undo: "M9 14 4 9l5-5M4 9h10a6 6 0 0 1 0 12h-3"
+    readonly property string layers: "M12 3 2 8l10 5 10-5-10-5zM2 13l10 5 10-5"
+    readonly property string unlink: "M18.8 12.3l1.7-1.7a5 5 0 0 0-7-7l-1.7 1.7M5.2 11.7l-1.7 1.7a5 5 0 0 0 7 7l1.7-1.7M8 2v3M2 8h3M16 19v3M19 16h3"
+}

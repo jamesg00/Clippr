@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.pyc
+build/
+dist/
+*.spec
+bin/
+.pytest_cache/
+_qml_shots/
+*.exe
+*.zip
+*.dmg
+*.log
+.idea/
+.vscode/
+Thumbs.db
